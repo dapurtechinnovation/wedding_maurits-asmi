@@ -395,6 +395,17 @@ p, h1, h2 {
     margin-left:40px;
 }
 
+.about-card{
+    display:flex;
+    flex-direction:column;
+
+    justify-content:flex-end; /* ke bawah */
+    align-items:flex-start;   /* ke kiri */
+
+    min-height:400px; /* sesuaikan tinggi card */
+    padding:30px;
+}
+
 #gallery{
     display:flex;
     justify-content:center;
@@ -1912,42 +1923,37 @@ body{
     margin-bottom:10px;
 }
 
-/* GRID */
 .address-grid{
-
     display:grid;
 
     grid-template-columns:
-    repeat(auto-fit, minmax(340px, 1fr));
+    repeat(auto-fit, minmax(280px, 320px));
+
+    justify-content:center;
+
+    justify-items:center; /* Tambahkan ini */
 
     gap:24px;
-
-    width:100%;
 
     margin-top:30px;
 }
 
 /* CARD */
 .address-card{
+    background: rgba(0,0,0,.45);
+    border: 1px solid rgba(255,255,255,.08);
+    border-radius: 26px;
+    overflow: hidden;
+    transition: transform .35s ease, box-shadow .35s ease;
+    backdrop-filter: blur(10px);
 
-    background:
-    rgba(0,0,0,.45);
+    display: flex;
+    flex-direction: column;
 
-    border:
-    1px solid rgba(255,255,255,.08);
+    width: 100%;
+    max-width: 320px;
 
-    border-radius:26px;
-
-    overflow:hidden;
-
-    transition:
-    transform .35s ease,
-    box-shadow .35s ease;
-
-    backdrop-filter:blur(10px);
-
-    display:flex;
-    flex-direction:column;
+    margin: 0 auto; /* Tambahkan ini */
 }
 
 .address-card:hover{
