@@ -387,11 +387,11 @@ p, h1, h2 {
 
     border-radius:30px;
 
-    padding:60px 30px;
+    padding:20px 10px;
 
     text-align:left; /* ubah jadi kiri */
 
-    margin-top:40px;
+    margin-top:90px;
     margin-left:40px;
 }
 
@@ -402,8 +402,8 @@ p, h1, h2 {
     justify-content:flex-end; /* ke bawah */
     align-items:flex-start;   /* ke kiri */
 
-    min-height:400px; /* sesuaikan tinggi card */
-    padding:30px;
+    min-height:500px; /* sesuaikan tinggi card */
+    padding:10px;
 }
 
 #gallery{
@@ -454,6 +454,27 @@ p, h1, h2 {
 
 }
 
+#kumkel2{
+    width:100%;
+    max-width:1000px;
+
+    border-radius:30px;
+
+    padding:60px 30px;
+
+    text-align:center;
+
+    margin:0 auto; /* otomatis center */
+
+        background:
+    linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)),
+    url('../img/kumkel2.webp') center center/cover no-repeat;
+
+    background-size:cover;
+    background-position:center;
+
+}
+
 #pinang{
     width:100%;
     max-width:1000px;
@@ -476,6 +497,20 @@ p, h1, h2 {
 }
 
 #kumkel .card{
+    width:100%;
+    max-width:1000px;
+
+    border-radius:30px;
+
+    padding:60px 30px;
+
+    text-align:center;
+
+    margin:0 auto; /* otomatis center */
+
+}
+
+#kumkel2 .card{
     width:100%;
     max-width:1000px;
 
@@ -961,6 +996,15 @@ body{
     padding-bottom:140px;
 }
 
+#kumkel2{
+    overflow-y:auto;
+
+    align-items:flex-start;
+
+    padding-top:100px;
+    padding-bottom:140px;
+}
+
 #pinang{
     overflow-y:auto;
 
@@ -971,11 +1015,23 @@ body{
 }
 
 /* SCROLL AREA kumkel */
-#kumkel, #pinang::-webkit-scrollbar{
+#pinang::-webkit-scrollbar{
+    width:6px;
+}
+#kumkel::-webkit-scrollbar{
+    width:6px;
+}
+
+#kumkel2::-webkit-scrollbar{
     width:6px;
 }
 
 #kumkel::-webkit-scrollbar-thumb{
+    background:rgba(255,255,255,.25);
+    border-radius:20px;
+}
+
+#kumkel2::-webkit-scrollbar-thumb{
     background:rgba(255,255,255,.25);
     border-radius:20px;
 }
@@ -1030,6 +1086,25 @@ body{
 
 /* 2 RSVP CARD */
 .kumkel-card{
+    width:100%;
+    max-width:700px;
+
+    min-height:max-content;
+
+    margin:auto;
+
+    background: rgba(0, 0, 0, 0);
+
+    border:1px solid rgba(255, 255, 255, 0);
+
+    border-radius:30px;
+
+    padding:40px 25px;
+
+    box-shadow:0 20px 60px rgba(0,0,0,.4);
+}
+
+.kumkel2-card{
     width:100%;
     max-width:700px;
 
@@ -1140,7 +1215,7 @@ body{
 /* kumkel 3 */
 @media(max-width:768px){
 
-    #kumkel, #pinang{
+    #kumkel, #kumkel2, #pinang{
         padding-top:70px;
         padding-bottom:180px;
     }
@@ -1532,7 +1607,7 @@ body{
    COUNTDOWN
 ========================= */
 
-.countdown, .mundur, .mundur2{
+.countdown, .mundur, .mundur2, .mundu{
     margin-top:35px;
 
     display:flex;
