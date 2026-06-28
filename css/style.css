@@ -66,7 +66,7 @@ h1, h2, .hero-title {
 
 .title{
     font-family:'Cormorant Garamond', serif;
-    font-size:clamp(30px, 9vw, 50px);
+    font-size:clamp(30px, 9vw, 30px);
     line-height:1.1;
     margin-bottom:20px;
 }
@@ -297,7 +297,7 @@ p, h1, h2 {
     position:absolute;
     inset:0;
 
-    background:url("../img/M&A3.webp") center/cover no-repeat;
+    background:url("../img/M&A52.webp") center/cover no-repeat;
     filter:blur(12px);
     transform:scale(1.1);
 
@@ -319,7 +319,7 @@ p, h1, h2 {
     position:absolute;
     inset:0;
 
-    background:url("../img/M&A3.webp") center/cover no-repeat;
+    background:url("../img/M&A52.webp") center/cover no-repeat;
 
     filter:blur(12px);
     transform:scale(1.1);
@@ -359,7 +359,7 @@ p, h1, h2 {
     position:absolute;
     inset:0;
 
-    background:url("../img/M&A3.webp") center/cover no-repeat;
+    background:url("../img/M&A60.webp") center/cover no-repeat;
 
     filter:blur(12px);
     transform:scale(1.1);
@@ -391,8 +391,8 @@ p, h1, h2 {
 
     text-align:left; /* ubah jadi kiri */
 
-    margin-top:90px;
-    margin-left:40px;
+    margin-top:60px;
+    margin-left:30px;
 }
 
 .about-card{
@@ -402,7 +402,7 @@ p, h1, h2 {
     justify-content:flex-end; /* ke bawah */
     align-items:flex-start;   /* ke kiri */
 
-    min-height:500px; /* sesuaikan tinggi card */
+    min-height:300px; /* sesuaikan tinggi card */
     padding:10px;
 }
 
@@ -475,6 +475,48 @@ p, h1, h2 {
 
 }
 
+#gallery{
+    width:100%;
+    max-width:1000px;
+
+    border-radius:30px;
+
+    padding:60px 30px;
+
+    text-align:center;
+
+    margin:0 auto; /* otomatis center */
+
+        background:
+    linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)),
+    url('../img/M&A60.webp') center center/cover no-repeat;
+
+    background-size:cover;
+    background-position:center;
+
+}
+
+#about{
+    width:100%;
+    
+    max-width:1000px;
+
+    border-radius:30px;
+
+    padding:60px 30px;
+
+    text-align:center;
+
+    margin:0 auto; /* otomatis center */
+
+        background:
+    url('../img/M&A52.webp') center center/cover no-repeat;
+
+    background-size:cover;
+    background-position:center;
+
+}
+
 #pinang{
     width:100%;
     max-width:1000px;
@@ -528,6 +570,10 @@ p, h1, h2 {
     display:flex;
     justify-content:flex-end; /* dorong ke kanan */
     align-items:right;
+
+     background:
+    linear-gradient(rgba(0, 0, 0, 0.091), rgba(0, 0, 0, 0.091)),
+    url('../img/M&A50.webp') center center/cover no-repeat;
 }
 
 #contact .card{
@@ -1869,7 +1915,7 @@ body{
 
     background:
     linear-gradient(rgba(0,0,0,.55), rgba(0,0,0,.65)),
-    url("../img/M&A3.webp") center center/cover no-repeat;
+    url("../img/M&A51.webp") center center/cover no-repeat;
 
     background-size:cover;
     background-position:center;
